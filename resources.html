@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en-GB" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <title>Resources - Being Balanced</title>
+    <meta content="Comprehensive mental health resources including directories, toolkits, educational materials, and support tools. Filterable database of therapists, helplines, self-help resources, and crisis support information." name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <!-- Meta & Font links -->
+    <link href="https://fonts.googleapis.com/css?family=Prata:400,Montserrat:400,500,600,700,Alice:400,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/elementor-frontend.min.css" rel="stylesheet">
+    
+    <!-- Filtering Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <!-- Chart.js for Data Visualization -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+
+<body class="page wp-singular page-template-default page page-id-resources wp-custom-logo">
+
+<!-- Header -->
+<header class="header">
+    <div class="nav-container">
+        <div class="nav-brand">
+            <a href="index.html">
+                <img src="images/Beingbalanced-Logo.jpg" alt="Being Balanced" width="150" height="60">
+            </a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us-being-balanced-consultancy-ventures.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+                <li><a href="our-team.html">Our Team</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="podcasts.html">Podcasts</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero-section resources-hero">
+    <div class="hero-overlay"></div>
+    <div class="elementor-container">
+        <div class="hero-content">
+            <h1 class="hero-title">Mental Health Resources Hub</h1>
+            <p class="hero-subtitle">Comprehensive directory of therapists, helplines, tools & support - all in one place</p>
+            <div class="resource-search">
+                <input type="search" id="resource-search" placeholder="Search resources..." aria-label="Search mental health resources">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Filtering Controls -->
+<section class="filter-section">
+    <div class="elementor-container">
+        <h2>Find What You Need</h2>
+        <div class="filter-controls">
+            
+            <div class="filter-group">
+                <label>Category</label>
+                <select id="category-filter">
+                    <option value="*">All Categories</option>
+                    <option value="therapists">Therapists & Counselors</option>
+                    <option value="helplines">Helplines & Emergency Support</option>
+                    <option value="assessment">Assessment Tools</option>
+                    <option value="education">Educational Resources</option>
+                    <option value="self-care">Self-Care Tools</option>
+                    <option value="organization">Organizations & Support Groups</option>
+                    <option value="mobile">Mobile Apps & Digital Tools</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label>Location</label>
+                <select id="location-filter">
+                    <option value="*">All Locations</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="online">Online/Telehealth</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label>Price</label>
+                <select id="price-filter">
+                    <option value="*">All Prices</option>
+                    <option value="free">Free</option>
+                    <option value="paid">Paid Services</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label>Specialty</label>
+                <select id="specialty-filter">
+                    <option value="*">All Specialties</option>
+                    <option value="anxiety">Anxiety</option>
+                    <option value="depression">Depression</option>
+                    <option value="trauma">Trauma & PTSD</option>
+                    <option value="relationship">Relationship Counseling</option>
+                    <option value="grief">Grief & Loss</option>
+                    <option value="child">Child & Adolescent</option>
+                    <option value="family">Family Therapy</option>
+                </select>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Resources Grid -->
+<section class="resources-section">
+    <div class="elementor-container">
+        <div id="resources-grid" class="resources-grid">
+            
+            <!-- Therapists Directory -->
+            <div class="resource-card therapists" data-category="therapists" data-location="bangalore" data-price="paid" data-specialty="anxiety,depression">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-user-md"></i></div>
+                    <h3>Clinical Psychologists Directory</h3>
+                </div>
+                <div class="card-content">
+                    <p>Verified list of experienced clinical psychologists specializing in anxiety, depression, and relationship counseling across major Indian cities.</p>
+                    <div class="resource-tags">
+                        <span>Bangalore</span>
+                        <span>Mumbai</span>
+                        <span>Chennai</span>
+                        <span>Online</span>
+                    </div>
+                    <a href="#therapists" class="resource-link">View Directory</a>
+                </div>
+            </div>
+            
+            <!-- Helplines -->
+            <div class="resource-card helplines" data-category="helplines" data-location="*" data-price="free">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Emergency Mental Health Resources</h3>
+                </div>
+                <div class="card-content">
+                    <p>24/7 crisis support helplines, suicide prevention hotlines, and emergency contacts for immediate mental health assistance.</p>
+                    <div class="emergency-numbers">
+                        <div class="helpline">
+                            <span class="name">AASRA</span>
+                            <span class="number">+91-9-834-562-47 | 1800-102-4728</span>
+                        </div>
+                        <div class="helpline">
+                            <span class="name">iCall</span>
+                            <span class="number">022-2552-1111</span>
+                        </div>
+                        <div class="helpline">
+                            <span class="name">Lifeline India</span>
+                            <span class="number">+91-981-024-5113</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Assessment Tools -->
+            <div class="resource-card assessment" data-category="assessment" data-location="online" data-price="free">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h3>Mental Health Screening Tools</h3>
+                </div>
+                <div class="card-content">
+                    <p>Validated assessment tools including PHQ-9, GAD-7, and other standard psychological screening instruments.</p>
+                    <div class="tools-list">
+                        <a href="#phq9" class="tool-item">PHQ-9 (Depression)</a>
+                        <a href="#gad7" class="tool-item">GAD-7 (Anxiety)</a>
+                        <a href="#dass21" class="tool-item">DASS-21</a>
+                        <a href="#wholy" class="tool-item">Wellbeing Assessment</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Educational Resources -->
+            <div class="resource-card education" data-category="education" data-location="" data-price="free">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Educational Repository</h3>
+                </div>
+                <div class="card-content">
+                    <p>Free educational materials including therapeutic techniques guides, mental health awareness manuals, and family/individual resources.</p>
+                    <div class="content-categories">
+                        <a href="#adult-resources" class="category-item">Adult Mental Health</a>
+                        <a href="#child-resources" class="category-item">Child & Adolescent</a>
+                        <a href="#workplace" class="category-item">Workplace Mental Health</a>
+                        <a href="#family" class="category-item">Family Resources</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Support Groups -->
+            <div class="resource-card organization" data-category="organization" data-location="online" data-price="free">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <h3>Support Groups Directory</h3>
+                </div>
+                <div class="card-content">
+                    <p>Curated list of peer support groups, online communities, and organizational mental wellness programs.</p>
+                    <div class="group-categories">
+                        <a href="#online-communities" class="category-item">Online Communities</a>
+                        <a href="#local-groups" class="category-item">Local Support Groups</a>
+                        <a href="#specialized" class="category-item">Specialized Forums</a>
+                        <a href="#workplace-groups" class="category-item">Workplace Programs</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Apps -->
+            <div class="resource-card mobile" data-category="mobile" data-location="online" data-price="dependent">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mental Health Apps & Tools</h3>
+                </div>
+                <div class="card-content">
+                    <p>Curated collection of mental health mobile apps including meditation, therapy, mood tracking, and crisis support tools.</p>
+                    <div class="app-categories">
+                        <a href="#meditation-apps" class="app-item">Meditation Apps</a>
+                        <a href="#therapy-apps" class="app-item">Therapy Support</a>
+                        <a href="#mood-tracking" class="app-item">Mood Tracking</a>
+                        <a href="#crisis-support" class="app-item">Emergency Support</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Therapeutic Techniques -->
+            <div class="resource-card self-care" data-category="self-care" data-location="online" data-price="free">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Self-Care Repository</h3>
+                </div>
+                <div class="card-content">
+                    <p>Collection of self-care techniques, mindfulness exercises, stress management tools, and daily wellness practices.</p>
+                    <div class="self-care-categories">
+                        <a href="#mindfulness" class="tool-item">Mindfulness Exercises</a>
+                        <a href="#stress-management" class="tool-item">Stress Relief Tools</a>
+                        <a href="#sleep-programs" class="tool-item">Sleep Hygiene</a>
+                        <a href="#daily-routines" class="tool-item">Daily Practices</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Crisis Resources -->
+            <div class="resource-card helplines" data-category="helplines" data-location="*" data-price="free">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                    <h3>Crisis & Support Directory</h3>
+                </div>
+                <div class="card-content">
+                    <p>Urgent mental health resources including crisis intervention, suicide prevention, and immediate support contacts.</p>
+                    <div class="crisis-contacts">
+                        <div class="contact-item emergency-editor">
+                            <span>🚨 EMERGENCY: </span>
+                            <span class="emergency-number">100 - Police</span>
+                            <span class="emergency-number">108 - Medical Emergency</span>
+                        </div>
+                        <div class="contact-item mental-emergency">
+                            <span>AASRA: +91-9820466726 | iCall: 022-25521111</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Professional Reference -->
+            <div class="resource-card education" data-category="education" data-location="" data-price="free">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Professional Resources</h3>
+                </div>
+                <div class="card-content">
+                    <p>Resources for mental health professionals including continuing education, networking opportunities, and professional development tools.</p>
+                    <div class="professional-resources">
+                        <a href="#conferences" class="resource-link">Conferences & Workshops</a>
+                        <a href="#continuing-education" class="resource-link">CE Credits</a>
+                        <a href="#networking" class="resource-link">Professional Networks</a>
+                        <a href="#research" class="resource-link">Research Opportunities</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Detailed Sections -->
+<section class="detailed-resources">
+    <div class="elementor-container">
+        
+        <!-- Therapist Directory Section -->
+        <div id="therapists" class="resource-section">
+            <h2>Verified Therapists Directory</h2>
+            <div class="therapist-grid">
+                
+                <div class="therapist-card">
+                    <img src="images/teena-2-150x150.jpg" alt="Dr. Teena Augustine Joseph" class="therapist-photo">
+                    <h3>Dr. Teena Augustine Joseph</h3>
+                    <p class="specialty">Lead Therapist</p>
+                    <p class="focus">Anxiety, Depression, Trauma, Relationship Counseling</p>
+                    <p class="location">📍 Bangalore & Online</p>
+                    <p class="experience">18+ years experience, UGC-JRF Ph.D.</p>
+                    <a href="contact.html?therapist=teena" class="contact-therapist">Contact for appointment</a>
+                </div>
+                
+                <div class="therapist-card">
+                    <div class="therapist-avatar">JS</div>
+                    <h3>Dr. Jyoti S.</h3>
+                    <p class="specialty">Clinical Psychologist</p>
+                    <p class="focus">PTSD, Grief, LGBTQ+ Therapy</p>
+                    <p class="location">📍 Remote/Telehealth</p>
+                    <p class="experience">8 years clinical experience</p>
+                    <a href="contact.html?therapist=jyoti" class="contact-therapist">Contact</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- Assessment Tools Section -->
+        <div id="assessment" class="resource-section">
+            <h2>Self-Assessment Tools</h2>
+            <div class="assessment-tools">
+                
+                <div class="assessment-tool">
+                    <h3>PHQ-9 Depression Screening</h3>
+                    <p>The Patient Health Questionnaire-9 is a validated screening tool for depression symptoms assessment.</p>
+                    <div class="tool-details">
+                        <span>Duration: 2 minutes</span>
+                        <span>Validation: Gold standard</span>
+                        <a href="#phq9-test" class="take-test">Take PHQ-9 Test</a>
+                    </div>
+                </div>
+                
+                <div class="assessment-tool">
+                    <h3>GAD-7 Anxiety Screening</h3>
+                    <p>7-question screening tool for generalized anxiety disorder. Widely used in clinical practice.</p>
+                    <div class="tool-details">
+                        <span>Duration: 2 minutes</span>
+                        <span>Validation: Excellent reliability</span>
+                        <a href="#gad7-test" class="take-test">Take GAD-7 Test</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Community Corner -->
+<section class="community-corner">
+    <div class="elementor-container">
+        <h2>Community Mental Health Resources</h2>
+        <div class="community-sections">
+            
+            <div class="support-group-section">
+                <h3>Mental Health Support Groups</h3>
+                <div class="group-list">
+                    <div class="support-item">
+                        <h4>Bangalore Mental Health Meetup</h4>
+                        <p>Weekly support group for anxiety, depression, and general mental wellness. Every Saturday 3-5 PM.</p>
+                        <a href="bangalore-support@beingbalanced.co.in" class="group-contact">Contact Organizer</a>
+                    </div>
+                    
+                    <div class="support-item">
+                        <h4>Online Anxiety Support Circle</h4>
+                        <p>Zoom meeting support group focusing on anxiety management techniques. Wednesdays 7-9 PM.</p>
+                        <a href="online-support@beingbalanced.co.in" class="group-contact">Join Online</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="digital-tools-section">
+                <h3>Recommended Mental Health Apps</h3>
+                <div class="app-recommendations">
+                    <div class="app-item">
+                        <h4>Headspace</h4>
+                        <p>Guided meditation and mindfulness practices</p>
+                        <span class="app-type">Paid - iOS/Android</span>
+                    </div>
+                    <div class="app-item">
+                        <h4>Calm</h4>
+                        <p>Sleep stories, meditation, and anxiety relief</p>
+                        <span class="app-type">Freemium - iOS/Android</span>
+                    </div>
+                    <div class="app-item">
+                        <h4>Sanvello</h4>
+                        <p>Mood tracking and anxiety management toolkit</p>
+                        <span class="app-type">Free trial - iOS/Android</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Interactive Resource Calculator -->
+<section class="resource-calculator">
+    <div class="elementor-container">
+        <h2>Find Resources Based on Your Needs</h2>
+        <div class="calculator-interface">
+            
+            <div class="calculator-options">
+                <h3>Answer these questions to get personalized recommendations:</h3>
+                
+                <div class="question-group">
+                    <label>What are you looking for?</label>
+                    <div class="options">
+                        <button class="calc-option" data-resource="therapists">Professional Therapy</button>
+                        <button class="calc-option" data-resource="self-help">Self-Help Resources</button>
+                        <button class="calc-option" data-resource="emergency">Crisis/Immediate Support</button>
+                        <button class="calc-option" data-resource="education">Learning Materials</button>
+                    </div>
+                </div>
+                
+                <div class="question-group">
+                    <label>Preferred mode of interaction?</label>
+                    <div class="options">
+                        <button class="calc-option" data-mode="online">Online/Telehealth</button>
+                        <button class="calc-option" data-mode="in-person">Face-to-face</button>
+                        <button class="calc-option" data-mode="hybrid">Mixed approaches</button>
+                    </div>
+                </div>
+                
+                <div class="question-group">
+                    <label>Your specific concern?</label>
+                    <div class="options">
+                        <button class="calc-option" data-concern="anxiety">Anxiety/Stress</button>
+                        <button class="calc-option" data-concern="depression">Depression</button>
+                        <button class="calc-option" data-concern="relationship">Relationship Issues</button>
+                        <button class="calc-option" data-concern="work">Workplace Mental Health</button>
+                    </div>
+                </div>
+                
+                <button id="show-recommendations" class="recommendation-btn">
+                    Get Personalized Recommendations
+                </button>
+                
+                <div id="personalized-results" class="results-section"></div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Ready to Connect -->
+<section class="ready-to-connect">
+    <div class="elementor-container">
+        <div class="connect-content">
+            <h2>Need Something More Personalized?</h2>
+            <p>If you can't find exactly what you need in our resources, our team is here to help guide you to the right support and services.</p>
+            <a href="contact.html" class="cta-button">Contact Our Team</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Being Balanced Resources</h3>
+            <p>Comprehensive mental health support and tools for healing, growth, and well-being.</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+917829876698">+91 78298 76698</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:resources@beingbalanced.co.in">resources@beingbalanced.co.in</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script>
+// Resources filtering functionality
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Initialize Isotope
+    const grid = document.getElementById('resources-grid');
+    const gridInstance = new Isotope(grid, {
+        itemSelector: '.resource-card',
+        layoutMode: 'fitRows',
+        filter: '*'
+    });
+    
+    // Search functionality
+    const searchInput = document.getElementById('resource-search');
+    searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        gridInstance.arrange({
+            filter: function(item) {
+                return item.textContent.toLowerCase().includes(searchTerm);
+            }
+        });
+    });
+    
+    // Filter by dropdown selections
+    const filters = ['#category-filter', '#location-filter', '#price-filter', '#specialty-filter'];
+    const filterValues = {category: '*', location: '*', price: '*', specialty: '*'};
+    
+    filters.forEach(id => {
+        const select = document.querySelector(id);
+        select.addEventListener('change', function() {
+            const currentFilter = this.getAttribute('id').replace('-filter', '');
+            filterValues[currentFilter] = this.value;
+            
+            // Build combined filter
+            let combinedFilter = '.resource-card';
+            Object.values(filterValues).forEach(filter => {
+                if (filter !== '*') {
+                    combinedFilter += `[data-${Object.keys(filterValues)[Object.values(filterValues).indexOf(filter)]}*="${filter}"]`;
+                }
+            });
+            
+            gridInstance.arrange({ filter: combinedFilter });
+        });
+    });
+    
+    // Calculator functionality
+    let selectedValues = {resource: null, mode: null, concern: null};
+    
+    const calculatorButtons = document.querySelectorAll('.calc-option');
+    calculatorButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const type = this.getAttribute('data-resource') || this.getAttribute('data-mode') || this.getAttribute('data-concern');
+            const category = this.dataset.resource ? 'resource' : this.dataset.mode ? 'mode' : 'concern';
+            selectedValues[category] = type;
+            
+            this.classList.add('selected');
+        });
+    });
+    
+    document.getElementById('show-recommendations').addEventListener('click', function() {
+        showPersonalizedRecommendations(selectedValues);
+    });
+    
+    function showPersonalizedRecommendations(values) {
+        const resultsDiv = document.getElementById('personalized-results');
+        let recommendations = [];
+        
+        if (values.resource === 'therapists') {
+            recommendations.push({
+                title: 'Trusted Therapists',
+                resources: ['Clinical psychologists', 'Licensed counselors', 'Online therapy platforms']
+            });
+        }
+        
+        if (values.mode === 'online') {
+            recommendations.push({
+                title: 'Remote Support',
+                resources: ['Telehealth counseling', 'Online support groups', 'Digital therapy platforms']
+            });
+        }
+        
+        let resultsHTML = '<h4>Based on your selections, we recommend:</h4>';
+        recommendations.forEach(rec => {
+            resultsHTML += `
+                <div class="recommendation-category">
+                    <h5>${rec.title}</h5>
+                    <ul>
+                        ${rec.resources.map(resource => `<li>${resource}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        });
+        
+        resultsDiv.innerHTML = resultsHTML;
+        resultsDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+});
+</script>
+
+<!-- Styles -->
+<style>
+.resources-hero {
+    background: linear-gradient(rgba(45, 183, 66, 0.3), rgba(0,0,0,0.6)), url('images/resources-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.resource-search {
+    max-width: 400px;
+    margin: 30px auto 0;
+    position: relative;
+}
+
+#resource-search {
+    width: 100%;
+    padding: 15px 45px 15px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    background: white;
+}
+
+.resource-search i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2db742;
+}
+
+.filter-section {
+    padding: 40px 0;
+    background: #f8f9fa;
+}
+
+.filter-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.resources-section {
+    padding: 60px 0;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resource-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    background: #2db742;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.card-icon i {
+    font-size: 16px;
+}
+
+.resource-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.resource-tags span {
+    background: #e8f5e8;
+    color: #2db742;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.resource-link, .take-test, .contact-therapist, .group-contact {
+    display: inline-block;
+    background: #2db742;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.emergency-numbers, .crisis-contacts {
+    margin: 15px 0;
+}
+
+.helpline {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.calculator-options .options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.calc-option {
+    background: white;
+    border: 2px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 14px;
+}
+
+.calc-option:hover, .calc-option.selected {
+    border-color: #2db742;
+    background: #e8f5e8;
+    color: #2db742;
+}
+
+.recommendation-category {
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 4px solid #2db742;
+}
+
+/* responsive styles */
+@media (max-width: 768px) {
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-controls {
+        grid-template-columns: 1fr;
+    }
+    
+    .therapist-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+</body>
+</html>
