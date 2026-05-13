@@ -1,0 +1,830 @@
+/*
+ * custom-pages.css
+ * Styles for the 9 custom new pages only.
+ * These are scoped to .custom-page-wrapper to avoid conflicts with Elementor.
+ * Import: @import Google Fonts (already loaded by Elementor via its CSS files)
+ */
+
+/* ─── BASE TYPOGRAPHY INSIDE CUSTOM PAGES ─────────────────────────────────── */
+.custom-page-wrapper {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.7;
+}
+
+.custom-page-wrapper h1,
+.custom-page-wrapper h2,
+.custom-page-wrapper h3,
+.custom-page-wrapper h4,
+.custom-page-wrapper h5,
+.custom-page-wrapper h6 {
+    font-family: 'Prata', serif;
+    color: #1a1a1a;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.custom-page-wrapper p {
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.custom-page-wrapper ul li,
+.custom-page-wrapper ol li {
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.custom-page-wrapper a {
+    color: #2db742;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.custom-page-wrapper a:hover {
+    color: #1a8a2e;
+}
+
+/* ─── LAYOUT CONTAINER ─────────────────────────────────────────────────────── */
+.custom-page-wrapper .container,
+.custom-page-wrapper .elementor-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* ─── HERO SECTION ─────────────────────────────────────────────────────────── */
+.custom-page-wrapper .hero-section {
+    position: relative;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.custom-page-wrapper .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 26, 26, 0.65);
+    z-index: 1;
+}
+
+.custom-page-wrapper .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.custom-page-wrapper .hero-title {
+    font-family: 'Prata', serif;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.custom-page-wrapper .hero-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.custom-page-wrapper .cta-button,
+.custom-page-wrapper .btn-primary {
+    display: inline-block;
+    background-color: #2db742;
+    color: #fff !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 36px;
+    border-radius: 4px;
+    border: 2px solid #2db742;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.custom-page-wrapper .cta-button:hover,
+.custom-page-wrapper .btn-primary:hover {
+    background-color: transparent;
+    color: #2db742 !important;
+    border-color: #2db742;
+}
+
+/* ─── SECTION LAYOUTS ──────────────────────────────────────────────────────── */
+.custom-page-wrapper section {
+    padding: 70px 0;
+}
+
+.custom-page-wrapper .section-title {
+    font-family: 'Prata', serif;
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.custom-page-wrapper .section-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+.custom-page-wrapper .intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.custom-page-wrapper .intro-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* ─── TEAM PAGE ─────────────────────────────────────────────────────────────── */
+.custom-page-wrapper .team-hero {
+    background-image: linear-gradient(135deg, #1a1a1a 0%, #2d4a35 100%);
+}
+
+.custom-page-wrapper .team-intro {
+    background-color: #F2EFE5;
+}
+
+.custom-page-wrapper .team-section {
+    background-color: #fff;
+}
+
+.custom-page-wrapper .team-member {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 50px;
+    margin-bottom: 60px;
+    align-items: start;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 40px;
+    border: 1px solid #f0f0f0;
+}
+
+.custom-page-wrapper .profile-2,
+.custom-page-wrapper .profile-4 {
+    grid-template-columns: 1fr 280px;
+}
+
+.custom-page-wrapper .profile-2 .member-image,
+.custom-page-wrapper .profile-4 .member-image {
+    order: 2;
+}
+
+.custom-page-wrapper .profile-2 .member-details,
+.custom-page-wrapper .profile-4 .member-details {
+    order: 1;
+}
+
+.custom-page-wrapper .member-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.custom-page-wrapper .member-details h3 {
+    font-size: 1.7rem;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.custom-page-wrapper .member-title {
+    color: #2db742;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.custom-page-wrapper .member-bio ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.custom-page-wrapper .member-bio ul li {
+    list-style: disc;
+}
+
+.custom-page-wrapper .member-expertise {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.custom-page-wrapper .expertise-tag {
+    background-color: #F2EFE5;
+    color: #1a1a1a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+/* ─── GROUP THERAPY PAGE ────────────────────────────────────────────────────── */
+.custom-page-wrapper .group-therapy-hero {
+    background-image: linear-gradient(135deg, #1a3a2a 0%, #2d6a3f 100%);
+}
+
+.custom-page-wrapper .group-card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 45px;
+    align-items: start;
+    margin-bottom: 60px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 40px;
+    border: 1px solid #f0f0f0;
+}
+
+.custom-page-wrapper .group-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.custom-page-wrapper .group-details h3 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.custom-page-wrapper .group-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.custom-page-wrapper .meta-item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.custom-page-wrapper .meta-item strong {
+    color: #1a1a1a;
+}
+
+.custom-page-wrapper .group-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.custom-page-wrapper .tag {
+    background-color: #e8f5ea;
+    color: #2db742;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+/* ─── TRAININGS PAGE ────────────────────────────────────────────────────────── */
+.custom-page-wrapper .trainings-hero {
+    background-image: linear-gradient(135deg, #1a2a3a 0%, #2d4a6a 100%);
+}
+
+.custom-page-wrapper .program-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 35px;
+    margin-bottom: 30px;
+    border-left: 5px solid #2db742;
+}
+
+.custom-page-wrapper .program-card h3 {
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.custom-page-wrapper .program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* ─── INTERNSHIPS PAGE ──────────────────────────────────────────────────────── */
+.custom-page-wrapper .internships-hero {
+    background-image: linear-gradient(135deg, #1a1a3a 0%, #2d2d6a 100%);
+}
+
+.custom-page-wrapper .internship-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 35px;
+    margin-bottom: 30px;
+    border: 1px solid #f0f0f0;
+}
+
+.custom-page-wrapper .internship-card h3 {
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.custom-page-wrapper .internship-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.custom-page-wrapper .option-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 35px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-page-wrapper .option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.custom-page-wrapper .option-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* ─── RESOURCES PAGE ────────────────────────────────────────────────────────── */
+.custom-page-wrapper .resources-hero {
+    background-image: linear-gradient(135deg, #2a1a1a 0%, #6a2d2d 100%);
+}
+
+.custom-page-wrapper .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.custom-page-wrapper .resource-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 30px;
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-page-wrapper .resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.custom-page-wrapper .resource-card h3 {
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.custom-page-wrapper .resource-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.custom-page-wrapper .resource-type {
+    display: inline-block;
+    background-color: #e8f5ea;
+    color: #2db742;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+/* ─── PODCASTS PAGE ─────────────────────────────────────────────────────────── */
+.custom-page-wrapper .podcasts-hero {
+    background-image: linear-gradient(135deg, #1a1a2a 0%, #2a2d6a 100%);
+}
+
+.custom-page-wrapper .podcast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.custom-page-wrapper .podcast-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-page-wrapper .podcast-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.custom-page-wrapper .podcast-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.custom-page-wrapper .podcast-info {
+    padding: 25px;
+}
+
+.custom-page-wrapper .podcast-info h3 {
+    font-size: 1.15rem;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.custom-page-wrapper .podcast-meta {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.82rem;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.custom-page-wrapper .podcast-player {
+    width: 100%;
+    margin-top: 12px;
+    border-radius: 6px;
+}
+
+/* ─── CONTACT & CONTACT FORM PAGES ─────────────────────────────────────────── */
+.custom-page-wrapper .contact-hero {
+    background-image: linear-gradient(135deg, #1a2a1a 0%, #2d4a3a 100%);
+}
+
+.custom-page-wrapper .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.custom-page-wrapper .contact-info h3 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+}
+
+.custom-page-wrapper .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.custom-page-wrapper .contact-icon {
+    font-size: 1.4rem;
+    color: #2db742;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.custom-page-wrapper .contact-text h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.custom-page-wrapper .contact-text p {
+    color: #555;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.custom-page-wrapper .contact-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.custom-page-wrapper .form-group {
+    margin-bottom: 20px;
+}
+
+.custom-page-wrapper .form-group label {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.custom-page-wrapper .form-group input,
+.custom-page-wrapper .form-group select,
+.custom-page-wrapper .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fafafa;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.custom-page-wrapper .form-group input:focus,
+.custom-page-wrapper .form-group select:focus,
+.custom-page-wrapper .form-group textarea:focus {
+    outline: none;
+    border-color: #2db742;
+    box-shadow: 0 0 0 3px rgba(45, 183, 66, 0.1);
+    background: #fff;
+}
+
+.custom-page-wrapper .form-group textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.custom-page-wrapper .submit-btn {
+    width: 100%;
+    background-color: #2db742;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-page-wrapper .submit-btn:hover {
+    background-color: #1a8a2e;
+    transform: translateY(-2px);
+}
+
+/* ─── BLOGS PAGE ────────────────────────────────────────────────────────────── */
+.custom-page-wrapper .blogs-hero {
+    background-image: linear-gradient(135deg, #2a1a2a 0%, #4a2d6a 100%);
+}
+
+.custom-page-wrapper .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.custom-page-wrapper .blog-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-page-wrapper .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.custom-page-wrapper .blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.custom-page-wrapper .blog-content {
+    padding: 25px;
+}
+
+.custom-page-wrapper .blog-content h3 {
+    font-size: 1.15rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.custom-page-wrapper .blog-meta {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.82rem;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.custom-page-wrapper .blog-category {
+    display: inline-block;
+    background-color: #e8f5ea;
+    color: #2db742;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+/* ─── BACKGROUND ALTERNATING SECTIONS ──────────────────────────────────────── */
+.custom-page-wrapper .bg-light {
+    background-color: #F2EFE5;
+}
+
+.custom-page-wrapper .bg-white {
+    background-color: #fff;
+}
+
+.custom-page-wrapper .bg-dark {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.custom-page-wrapper .bg-dark h2,
+.custom-page-wrapper .bg-dark h3,
+.custom-page-wrapper .bg-dark p {
+    color: #fff;
+}
+
+/* ─── CALL TO ACTION STRIP ──────────────────────────────────────────────────── */
+.custom-page-wrapper .cta-strip {
+    background-color: #2db742;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.custom-page-wrapper .cta-strip h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.custom-page-wrapper .cta-strip p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+}
+
+.custom-page-wrapper .cta-strip .btn-white {
+    display: inline-block;
+    background: #fff;
+    color: #2db742 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 14px 36px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.custom-page-wrapper .cta-strip .btn-white:hover {
+    background: #1a1a1a;
+    color: #fff !important;
+}
+
+/* ─── MAP & EMBEDS ──────────────────────────────────────────────────────────── */
+.custom-page-wrapper .map-container {
+    width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.custom-page-wrapper .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ─── RESPONSIVE BREAKPOINTS ────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+    .custom-page-wrapper .team-member {
+        grid-template-columns: 220px 1fr;
+        gap: 30px;
+        padding: 30px;
+    }
+    .custom-page-wrapper .group-card {
+        grid-template-columns: 250px 1fr;
+        gap: 30px;
+    }
+    .custom-page-wrapper .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-page-wrapper .hero-title {
+        font-size: 2rem;
+    }
+    .custom-page-wrapper .section-title {
+        font-size: 1.7rem;
+    }
+    .custom-page-wrapper .team-member,
+    .custom-page-wrapper .profile-2,
+    .custom-page-wrapper .profile-4 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .custom-page-wrapper .profile-2 .member-image,
+    .custom-page-wrapper .profile-4 .member-image {
+        order: 0;
+    }
+    .custom-page-wrapper .profile-2 .member-details,
+    .custom-page-wrapper .profile-4 .member-details {
+        order: 0;
+    }
+    .custom-page-wrapper .member-image img {
+        max-width: 240px;
+        margin: 0 auto;
+    }
+    .custom-page-wrapper .member-expertise {
+        justify-content: center;
+    }
+    .custom-page-wrapper .group-card {
+        grid-template-columns: 1fr;
+    }
+    .custom-page-wrapper .program-grid,
+    .custom-page-wrapper .internship-grid,
+    .custom-page-wrapper .resource-grid,
+    .custom-page-wrapper .podcast-grid,
+    .custom-page-wrapper .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-page-wrapper .hero-title {
+        font-size: 1.6rem;
+    }
+    .custom-page-wrapper .team-member,
+    .custom-page-wrapper .group-card,
+    .custom-page-wrapper .contact-form {
+        padding: 20px;
+    }
+}

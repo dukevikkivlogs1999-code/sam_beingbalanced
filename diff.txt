@@ -1,0 +1,24 @@
+diff --git a/group-therapy.html b/group-therapy.html
+index 84cdf3c..8e7e6c2 100644
+--- a/group-therapy.html
++++ b/group-therapy.html
+@@ -189,7 +189,7 @@ var ecs_ajax_params = {"ajaxurl":"https://beingbalanced.co.in/wp-admin/admin-aja
+ }
+ 
+ body {
+-  font-family: Arial, sans-serif;
++  font-family: 'Montserrat', sans-serif;
+   line-height: 1.6;
+   padding: 10px;
+ }
+@@ -214,7 +214,9 @@ html {
+ 
+ h1, h2, h3, h4, h5, h6 {
+   margin-bottom: 10px;
+-}
++
++  font-family: 'Prata', serif;
++  color: #1a1a1a;}
+ 
+ p {
+   margin-bottom: 15px;
